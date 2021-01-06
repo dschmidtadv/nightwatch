@@ -1,0 +1,47 @@
+{
+  "src_folders": [
+    "_tests/integration/nightwatch"
+  ],
+  "webdriver": {
+    "start_process": true,
+    "server_path": "/vercel/workpath0/node_modules/chromedriver/lib/chromedriver/chromedriver",
+    "port": 9515
+  },
+  "test_settings": {
+    "chrome": {
+      "start_process": true,
+      "server_path": "/vercel/workpath0/node_modules/chromedriver/lib/chromedriver/chromedriver",
+      "port": 9515,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "headless": false
+      }
+    },
+    "nojs": {
+      "start_process": true,
+      "server_path": "/vercel/workpath0/node_modules/chromedriver/lib/chromedriver/chromedriver",
+      "port": 9515,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptDisabled": true
+      }
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "alwaysMatch": {
+          "moz:firefoxOptions": {
+            "args": [
+              "-headless"
+            ]
+          }
+        }
+      },
+      "webdriver": {
+        "start_process": true,
+        "port": 4446,
+        "server_path": "/vercel/workpath0/node_modules/.bin/geckodriver"
+      }
+    }
+  }
+}

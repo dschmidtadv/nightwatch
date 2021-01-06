@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "test": "nightwatch --config  _tests/nightwatch.json  -e chrome,firefox,nojs ",
     "build": "next build",
     "start": "next start"
   },
