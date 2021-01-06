@@ -9,7 +9,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "chromedriver": "^87.0.4",
+    "geckodriver": "^1.21.1",
     "next": "10.0.0",
+    "nightwatch": "^1.5.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }
