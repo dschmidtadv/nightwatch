@@ -10,7 +10,7 @@
   "test_settings": {
     "chrome": {
       "start_process": true,
-      "server_path": "node_modules/.bin/chromedriver",
+      "server_path": "/home/runner/work/nightwatch/nightwatch/node_modules/chromedriver/lib/chromedriver/chromedriver",
       "port": 9515,
       "desiredCapabilities": {
         "browserName": "chrome",
@@ -19,7 +19,7 @@
     },
     "nojs": {
       "start_process": true,
-      "server_path": "node_modules/.bin/chromedriver",
+      "server_path": "/home/runner/work/nightwatch/nightwatch/node_modules/chromedriver/lib/chromedriver/chromedriver",
       "port": 9515,
       "desiredCapabilities": {
         "browserName": "chrome",
