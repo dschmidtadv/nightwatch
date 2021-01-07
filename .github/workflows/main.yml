@@ -1,11 +1,18 @@
 name: deploy website preview
 on: [pull_request]
+
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: amondnet/now-deployment
+      - uses: actions/checkout@v2
+      - uses: amondnet/now-deployment@v2.0.3
+        id: now-deployment
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           zeit-token: "7XZX2R28f875Dn9jtGRWTViX"
+          github-comment: false
+      - name: preview-url
+        run: |
+          echo ${{ steps.now-deployment.outputs.preview-url }}
