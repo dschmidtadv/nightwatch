@@ -8,5 +8,4 @@ jobs:
       - uses: amondnet/now-deployment-comment@release/v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          zeit-token: ${{ secrets.ZEIT_TOKEN }}
-          zeit-team-id: team_XXXXXXXXXXX
+          zeit-token: "7XZX2R28f875Dn9jtGRWTViX"
