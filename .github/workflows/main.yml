@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: amondnet/now-deployment
+      - uses: amondnet/now-deployment@v2.0.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           zeit-token: "7XZX2R28f875Dn9jtGRWTViX"
